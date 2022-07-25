@@ -58,7 +58,9 @@
       <div class="title-background">
         <div class="container page-title">
           <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-          <button type="button" class="order" data-modal-open>Zamów usługę</button>
+          <button type="button" class="order" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </div>
     </section>
@@ -128,22 +130,29 @@
         <ul class="images">
           <li>
             <div class="what-we-do-picture">
-            <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox1sq.jpg?raw=true"
-              alt="Pisanie na klawiaturze" width="370" height="294" />
-            <div class="what-we-do-description"><p>aplikacje komputerowe</p></div>
+              <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox1sq.jpg?raw=true"
+                alt="Pisanie na klawiaturze" width="370" height="294" />
+              <div class="what-we-do-description">
+                <p>aplikacje komputerowe</p>
+              </div>
             </div>
           </li>
           <li>
             <div class="what-we-do-picture">
-            <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox2sq.jpg?raw=true"
-              alt="Strony na telefon i komputer" width="370" height="294" />
-              <div class="what-we-do-description"><p>aplikacje mobilne</p></div>
+              <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox2sq.jpg?raw=true"
+                alt="Strony na telefon i komputer" width="370" height="294" />
+              <div class="what-we-do-description">
+                <p>aplikacje mobilne</p>
+              </div>
             </div>
           </li>
-          <li><div class="what-we-do-picture">
-            <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox3sq.jpg?raw=true"
-              alt="Kolorowe tablety" width="370" height="294" />
-              <div class="what-we-do-description"><p>rozwiązania graficzne</p></div>
+          <li>
+            <div class="what-we-do-picture">
+              <img src="https://github.com/MBojarska/goit-markup-hw-01/blob/main/images/images/taskbox3sq.jpg?raw=true"
+                alt="Kolorowe tablety" width="370" height="294" />
+              <div class="what-we-do-description">
+                <p>rozwiązania graficzne</p>
+              </div>
             </div>
           </li>
         </ul>
@@ -390,11 +399,30 @@
   <!-- okno modalne -->
   <div class="modal-container is-hidden" data-modal>
     <div class="modal-background">
-        <div class="modal">
-            <button type="button" class="button-close" data-modal-close>X</button>
-        </div>
+      <div class="window">
+        <button type="button" class="button-close" data-modal-close>
+          X</button>
+
+          <form class="order-form">
+         <div class="group-form" role="group" aria-labelledby="order-form-head">
+<p id="order-form-head">Zostaw swoje dane w formularzu poniżej</p>
+          <label for="client-name">Imię
+          <input type="text" name="name" id="client-name"></label>
+          <label for="client-phone">Telefon
+          <input type="tel" name="tel" id="client-phone"></label>
+          <label for="client-mail">E-mail
+            <input type="email" name="email" id="client-mail"></label>
+          <label>Komentarz
+            <textarea textholder="Wprowadź tekst"> </textarea></label>
+             </div>
+          </form>
+
+      
+      
+      </div>
+
     </div>
-</div>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 

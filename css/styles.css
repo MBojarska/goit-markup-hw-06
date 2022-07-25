@@ -689,7 +689,7 @@ figcaption {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-background .modal {
+.window {
   position: absolute;
   left: 536px;
   top: 221px;
@@ -707,7 +707,7 @@ figcaption {
   pointer-events: none;
 }
 .button-close {
-  position: absolute;
+  position: inherit;
   top: 8px;
   right: 8px;
   background: #ffffff;
@@ -733,3 +733,48 @@ figcaption {
 
 
 
+/* formularz */
+.order-form{
+  position: inherit;
+  display: flex;
+
+}
+.group-form{
+  display: flex;
+  flex-direction: column;
+
+}
+.group-form p{
+  font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.group-form label{
+  margin-top: 10px;
+  margin-left: 40px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #757575;
+}
+.group-form input,
+.group-form textarea{
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: 40px;
+}
+.group-form textarea{
+  resize: none;
+  width: 448px;
+  height: 120px;
+}
