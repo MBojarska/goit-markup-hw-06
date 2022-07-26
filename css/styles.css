@@ -778,3 +778,52 @@ color: #757575;
   width: 448px;
   height: 120px;
 }
+
+/* formularz newsletter */
+
+.newsletter{
+  display: flex;
+  width: 506px;
+}
+.join-us h4 {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 200px;
+  height: 30px;
+  display: block;
+  padding-top: 72px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+.newsletter-form input{
+  width: 358px;
+  height: 50px;
+}
+
+.newsletter-button,
+.newsletter-button:hover,
+.newsletter-button:focus{
+  font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.06em;
+gap:24px;
+  color: var(--reg-white);
+  width: 200px;
+  height: 50px;
+  background-color: var(--agency-blue);
+}
