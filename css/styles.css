@@ -123,6 +123,7 @@ h1 {
   background-image: url(https://github.com/MBojarska/goit-hw-04/blob/main/images/background1.jpg?raw=true);
   background-position: cover;
   max-width: 1600px;
+  width: 100%;
   box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
 }
 
@@ -420,6 +421,7 @@ h3 {
   color: var(--agency-blue);
 }
 .footer {
+  width: 100%;
   display: flex;
   height: 252px;
   background: var(--agency-grey);
@@ -688,8 +690,22 @@ figcaption {
   transition: opacity 250ms, visibility 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  background-color: white;
+  border-radius: 4px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* .window {
   position: absolute;
   left: 536px;
   top: 221px;
@@ -699,7 +715,7 @@ figcaption {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 4px;
-}
+} */
 
 .is-hidden {
   opacity: 0;
@@ -730,7 +746,9 @@ figcaption {
   background: var(--agency-blue);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+.btn-submit{
+  position: relative;
+}
 
 
 /* formularz */
