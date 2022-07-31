@@ -396,15 +396,14 @@
       <div class="container join-us">
         <h4>dołącz do nas</h4>
         <form class="newsletter-form">
-          <label><input placeholder="E-mail">
-            <button type="button" class="newsletter-button">
-              Zapisz się             
-               <svg width="24" height="24" class="social-icon">
-                <use href="./images/icon.svg#icon-send"></use>
-              </svg>
-          </button></label>
+          <label><input placeholder="E-mail" /></label>
+          <button type="button" class="newsletter-button">
+            Zapisz się
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icon.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
-
       </div>
     </section>
   </footer>
@@ -413,44 +412,51 @@
   <div class="modal-container is-hidden" data-modal>
     <div class="modal-background">
       <div class="window">
-        <button type="button" class="button-close" data-modal-close>
-          X</button>
+        <button type="button" class="button-close" data-modal-close>X</button>
 
-          <form class="order-form" >
-         <div class="group-form" role="group" aria-labelledby="order-form-head">
-<h4 id="order-form-head">Zostaw swoje dane w formularzu poniżej</h4>
-          <label for="client-name" class="label l-name">
-            <svg width="12" height="12" class="form-icon">
-              <use href="./images/icon.svg#name-icon"></use>
-            </svg>
-            Imię
-          <input type="text" name="name" id="client-name"></label>
-          <label for="client-phone" class="label l-phone">
-            <svg width="14" height="14" class="form-icon">
-              <use href="./images/icon.svg#phone-icon"></use>
-            </svg>
-            Telefon
-          <input type="tel" name="tel" id="client-phone"></label>
-          <label for="client-mail" class="label l-mail">
-            <svg width="16" height="12" class="form-icon">
-              <use href="./images/icon.svg#mail-icon"></use>
-            </svg>
-            E-mail
-            <input type="email" name="email" id="client-mail"></label>
-          <label for="comments">Komentarz
-            <textarea placeholder="Type your message here..." id="comments"> </textarea></label>
+        <form class="order-form">
+          <div class="group-form" role="group" aria-labelledby="order-form-head">
+            <h4 id="order-form-head">
+              Zostaw swoje dane w formularzu poniżej
+            </h4>
+            <label for="client-name" class="label l-name">
+              <svg width="12" height="12" class="form-icon">
+                <use href="./images/icon.svg#name-icon"></use>
+              </svg>
+              Imię
+              <input type="text" name="name" id="client-name" required /></label>
+            <label for="client-phone" class="label l-phone">
+              <svg width="14" height="14" class="form-icon">
+                <use href="./images/icon.svg#phone-icon"></use>
+              </svg>
+              Telefon
+              <input type="tel" name="tel" id="client-phone" required /></label>
+            <label for="client-mail" class="label l-mail">
+              <svg width="16" height="12" class="form-icon">
+                <use href="./images/icon.svg#mail-icon"></use>
+              </svg>
+              E-mail
+              <input type="email" name="email" id="client-mail" required /></label>
+            <label for="comments">Komentarz
+              <textarea placeholder="Type your message here..." id="comments">
+                </textarea>
+            </label>
+
             <label for="statute" class="statute">
-              <input type="checkbox" id="statute"><p>Oświadczam iż akceptuję <a>Regulamin</a>
-               i <a>Politykę Prywatności.</a></p></label>
-                         <button class="btn-submit" type="submit">Wyślij</button>
-             </div>
+              <input type="checkbox" id="statute" class="statute-input visually-hidden" required />
 
-          </form>
+              <span>Oświadczam iż akceptuję <a href="#"> Regulamin</a> i
+                <a href="#">Politykę Prywatności.</a></span>
+            </label>
+            <label for="test" class="test">
+              <input type="checkbox" id="test" />
 
-      
-      
+              <span>test</span>
+            </label>
+            <button class="btn-submit" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
-
     </div>
   </div>
   <script src="./js/modal.js"></script>
