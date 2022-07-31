@@ -416,18 +416,32 @@
         <button type="button" class="button-close" data-modal-close>
           X</button>
 
-          <form class="order-form">
+          <form class="order-form" >
          <div class="group-form" role="group" aria-labelledby="order-form-head">
-<p id="order-form-head">Zostaw swoje dane w formularzu poniżej</p>
-          <label for="client-name">Imię
+<h4 id="order-form-head">Zostaw swoje dane w formularzu poniżej</h4>
+          <label for="client-name" class="label l-name">
+            <svg width="12" height="12" class="form-icon">
+              <use href="./images/icon.svg#name-icon"></use>
+            </svg>
+            Imię
           <input type="text" name="name" id="client-name"></label>
-          <label for="client-phone">Telefon
+          <label for="client-phone" class="label l-phone">
+            <svg width="14" height="14" class="form-icon">
+              <use href="./images/icon.svg#phone-icon"></use>
+            </svg>
+            Telefon
           <input type="tel" name="tel" id="client-phone"></label>
-          <label for="client-mail">E-mail
+          <label for="client-mail" class="label l-mail">
+            <svg width="16" height="12" class="form-icon">
+              <use href="./images/icon.svg#mail-icon"></use>
+            </svg>
+            E-mail
             <input type="email" name="email" id="client-mail"></label>
-          <label>Komentarz
-            <textarea textholder="Wprowadź tekst"> </textarea></label>
-            <label><input type="checkbox"></label>
+          <label for="comments">Komentarz
+            <textarea placeholder="Type your message here..." id="comments"> </textarea></label>
+            <label for="statute" class="statute">
+              <input type="checkbox" id="statute"><p>Oświadczam iż akceptuję <a>Regulamin</a>
+               i <a>Politykę Prywatności.</a></p></label>
                          <button class="btn-submit" type="submit">Wyślij</button>
              </div>
 
