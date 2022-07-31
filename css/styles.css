@@ -494,8 +494,10 @@ h3 {
 }
 .join-us {
   width: 206px;
-  height: 80px;
+  height: 86px;
   margin-left: 70px;
+  padding-bottom: 20px;
+  margin-right: 0;
 }
 .join-us h4 {
   font-weight: 700;
@@ -507,6 +509,7 @@ h3 {
   display: block;
   padding-top: 72px;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 
 .social-footer-item {
@@ -760,22 +763,10 @@ figcaption {
   height: 15px;
   margin-right: 8px;
 }
-#test {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-}
-.test {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 54px;
-}
-.test span{
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  letter-spacing: 0.03em;
-  color: #757575;
-}
+/* ::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+
+} */
 .statute {
   display: flex;
   justify-content: center;
@@ -948,15 +939,17 @@ background-image: url(../images/Vector.svg);
 
 .newsletter {
   display: flex;
-  width: 506px;
+  flex-direction: column;
+  width: 570px;
+  margin-left: 78px;
 }
-.join-us h4 {
+.newsletter h4 {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 200px;
-  height: 30px;
+  width: 270px;
+  height: 16px;
   display: block;
   padding-top: 72px;
   color: #ffffff;
@@ -970,8 +963,13 @@ background-image: url(../images/Vector.svg);
   margin-top: 20px;
 }
 .newsletter-form input {
+  background-color: #2F303A;
   width: 358px;
   height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 16px;
 }
 
 .newsletter-button,
