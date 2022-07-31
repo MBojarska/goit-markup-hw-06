@@ -803,19 +803,19 @@ figcaption {
   overflow: hidden;
 } */
 
-.statute-input{
-  width: 15px;
+#statute{
+  padding: 0;
+  width: 16px;
   height: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, .25);
+  border: 2px solid #000000;
   border-radius: 2px;
   appearance: none;
-  cursor: pointer;
 }
 
-.statute-input:checked{
+#statute:checked{
   background-color: var(--reg-white);
   border-color: var(--reg-white);
 background-image: url(../images/Vector.svg);
