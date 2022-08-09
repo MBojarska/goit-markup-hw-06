@@ -815,6 +815,7 @@ letter-spacing: 0.01em;
 #statute:checked{
   background-color: var(--reg-white);
 border: none;
+/* no border in this place */
 background-image: url(../images/Vector.svg);
 }
 
